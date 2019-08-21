@@ -1,6 +1,7 @@
 ## Readme is yet to be written. 
-## This is my first React-based project. using the Github Joba API to make a Readme is yet to be written. 
-## The impetus is to use the Github Jobs API to serve job openings through a clean, intuitive interface using React. 
+This is my first React-based project. using the Github Joba API to make a Readme is yet to be written. 
+The impetus is to use the Github Jobs API to serve job openings through a clean, intuitive interface using React. 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
