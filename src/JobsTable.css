@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'camcorder_ms_reg-webfont';
+    src: url('./util/CAMCORDER/web_font_files/fonts_CFF/camcorder_ms_reg-webfont.ttf');
+}
+
+.JobsTable {
+  font-size: 0.75em;
+  font-family: camcorder_ms_reg-webfont, 'Helvetica',sans-serif;
+  background-color: #eeff36;
+  text-align: center;
+  transition: all .5s ease-in-out;
+}
+
+table {
+  width: 100vw;
+  border: 10px solid #eeff36;
+  transition: all .5s ease-in-out;
+}
+
+th {
+  border: 10px solid #eeff36;
+  background-color: #eeff36;
+}

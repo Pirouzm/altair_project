@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'camcorder_ms_ol2-webfont';
+    src: url('./util/CAMCORDER/web_font_files/fonts_CFF/camcorder_ms_ol2-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'camcorder_ms_reg-webfont';
+    src: url('./util/CAMCORDER/web_font_files/fonts_CFF/camcorder_ms_reg-webfont.ttf');
+}
+
+.App {
+  text-align: center;
+  font-family: camcorder_ms_reg-webfont, 'Helvetica',sans-serif;
+}
+p {
+  margin: 0.5vw;
+  text-align: center;
+  font-family: camcorder_ms_reg-webfont, 'Helvetica',sans-serif;
+  text-shadow: 2px 2px 2px #eeff36
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: camcorder_ms_ol2-webfont, 'Helvetica',sans-serif;
+  text-shadow: 3px 2px 0px #ffd9f7;
+}
+
+.emojis {
+  text-shadow: none;
+}

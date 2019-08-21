@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'camcorder_ms_reg-webfont';
+    src: url('./util/CAMCORDER/web_font_files/fonts_CFF/camcorder_ms_reg-webfont.ttf');
+}
+.textField {
+  font-family: camcorder_ms_reg-webfont, 'Helvetica',sans-serif;
+  padding: 3px 3px;
+  min-width: 250px;
+  border: 10px solid #ffd9f7;
+  background-color: #ffd9f7;
+  color:#0099ff;
+  text-shadow: none;
+}
+
+.SearchBar {
+  margin: 100px 00px 0px 0px;
+  border: 0px solid #ffd9f7;
+  background-color: #ffd9f7;
+}
+
+.label {
+  font-family: camcorder_ms_reg-webfont, 'Helvetica',sans-serif;
+  margin: 150px;
+  min-width: 300px;
+}
+
+.submit, .clear  {
+  font-family: camcorder_ms_reg-webfont, 'Helvetica',sans-serif;
+  text-align: center;
+  font-size: 1em;
+  min-width: 100px;
+  padding: 10px;
+  background-color: #ffd9f7;
+  border:0em solid #282c34;
+
+}
+
+.submit:hover, .clear:hover, .textField:hover{
+  background: #eeff36;
+  border-color: #eeff36;
+  color: magenta;
+}
+
+.submit:hover, .clear:hover{
+animation: blinkingText 0.25s infinite;
+color: #39e600;
+}
+
+@keyframes blinkingText{
+100%{	background-color: #99ffd6; }
+100%{	background-colorr: #eeff36;	}
+}
+
+::placeholder , .fullTime, .submit, .clear {
+  color:magenta;
+}
+
+.checkBox {
+  margin-left: 50px;
+}
+.fullTime {
+  font-size: 0.7em;
+  font-weight: normal;
+  display: inline;
+}
+
+.textField:focus, .submit, .clear{
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.textField:focus{
+  color: #39e600;
+}

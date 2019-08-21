@@ -1,0 +1,228 @@
+
+html, body, #main { height: 100%; }
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+#main {
+	margin: auto;
+	width: 1216px;
+}
+
+
+
+.CAMC_REG { font-family: 'camcorder_reg'; }
+.CAMC_INV { font-family: 'camcorder_inv'; }
+.CAMC_OL1 { font-family: 'camcorder_ol1'; }
+.CAMC_OL2 { font-family: 'camcorder_ol2'; }
+.CAMC_UDK { font-family: 'camcorder_udk'; }
+.CAMC_MS_REG { font-family: 'camcorder_ms_reg'; }
+.CAMC_MS_INV { font-family: 'camcorder_ms_inv'; }
+.CAMC_MS_OL1 { font-family: 'camcorder_ms_ol1'; }
+.CAMC_MS_OL2 { font-family: 'camcorder_ms_ol2'; }
+.CAMC_MS_UDK { font-family: 'camcorder_ms_udk'; }
+
+.px10 { font-size: 10px; line-height: 10px; }
+.px16 { font-size: 16px; line-height: 16px; }
+.px20 { font-size: 20px; line-height: 20px; }
+.px24 { font-size: 24px; line-height: 24px; }
+.px30 { font-size: 30px; line-height: 30px; }
+.px32 { font-size: 32px; line-height: 32px; }
+.px40 { font-size: 40px; line-height: 40px; }
+
+
+
+#section-glyphchart {
+	font-family: 'camcorder_ms_reg';
+}
+
+table {
+	font-size: 20px;
+	line-height: 20px;
+}
+
+td {
+	height: 38px;
+	width: 38px;
+	text-align: center;
+	background-color: #ddd;
+}
+
+td p {
+	margin: 0;
+	padding: 0;
+	font: 10px Arial, sans-serif;
+}
+
+.lc {
+	background-color: #eee;	
+}
+
+
+
+#section-links {
+	height: 104px;
+	width: 1216px;
+	background-color: #ccc;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	font-family: 'camcorder_reg';
+	color: #000;
+}
+
+a.linkC:hover { font-family: 'camcorder_inv'; color: #00aef0; }
+a.linkC:active { font-family: 'camcorder_inv'; color: #00aef0; }
+
+a.linkM:hover { font-family: 'camcorder_ol2'; color: #ed008c; }
+a.linkM:active { font-family: 'camcorder_ol2'; color: #ed008c; }
+
+a.linkY:hover { font-family: 'camcorder_udk'; color: #ff0; }
+a.linkY:active { font-family: 'camcorder_udk'; color: #ff0; }
+
+a.linkK:hover { font-family: 'camcorder_inv'; }
+a.linkK:active { font-family: 'camcorder_inv'; }
+
+
+.links-1 {
+	width: 284px;
+	padding: 10px;
+	float: left;
+}
+
+.links-2 {
+	width: 284px;
+	padding: 10px;
+	float: left;
+	text-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+
+.links-3 {
+	width: 284px;
+	padding: 10px;
+	float: left;
+	text-shadow: 0 0 1px rgba(0,0,0,1);
+}
+
+.links-4 {
+	width: 284px;
+	padding: 10px;
+	float: left;
+	text-shadow: 0 0 2px rgba(0,0,0,1);
+}
+
+
+
+code {
+	font: 12px Arial, sans-serif;
+	line-height: 24px;
+	text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+
+
+#section-samples {
+	height: 594px;
+	width: 1216px;
+}
+
+#text-colC {
+	background-color: #00aef0;
+	color: #000;
+	width: 284px;
+	float: left;
+	padding: 10px;
+	text-shadow: 0 0 1px rgba(0,0,0,1);
+}
+
+#text-colM {
+	background-color: #ed008c;
+	color: #fff;
+	width: 284px;
+	float: left;
+	padding: 10px;
+	text-shadow: 0 0 2px rgba(0,0,0,1);
+}
+
+#text-colY {
+	background-color: #ff0;
+	color: #000;
+	width: 284px;
+	float: left;
+	padding: 10px;
+	text-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+
+#text-colK {
+	background-color: #000;
+	color: #fff;
+	width: 284px;
+	float: left;
+	padding: 10px;
+	text-shadow: 0 0 2px rgba(255,255,255,1);
+}
+
+
+
+
+#section-sizes {
+	height: 500px;
+	width: 1216px;
+}
+
+#sizes-col1 {
+	position: absolute;
+	color: #000;
+	width: 304px;
+	overflow: hidden;
+}
+
+#sizes-col2 {
+	position: absolute;
+	color: #404040;
+	width: 608px;
+	overflow: hidden;
+}
+
+#sizes-col3 {
+	position: absolute;
+	color: #808080;
+	width: 912px;
+	overflow: hidden;
+}
+
+#sizes-col4 {
+	position: absolute;
+	color: #fff;
+	width: 1216px;
+	overflow: hidden;
+}
+
+#sizes-col1 .px10 { background-color: #fff; }
+#sizes-col2 .px10 { background-color: #eee; }
+#sizes-col3 .px10 { background-color: #ddd; }
+#sizes-col4 .px10 { background-color: #ccc; }
+
+#sizes-col1 .px20 { background-color: #bbb; }
+#sizes-col2 .px20 { background-color: #aaa; }
+#sizes-col3 .px20 { background-color: #999; }
+#sizes-col4 .px20 { background-color: #888; }
+
+#sizes-col1 .px30 { background-color: #777; }
+#sizes-col2 .px30 { background-color: #666; }
+#sizes-col3 .px30 { background-color: #555; }
+#sizes-col4 .px30 { background-color: #444; }
+
+#sizes-col1 .px40 { background-color: #333; }
+#sizes-col2 .px40 { background-color: #222; }
+#sizes-col3 .px40 { background-color: #111; }
+#sizes-col4 .px40 { background-color: #000; }
