@@ -3,6 +3,38 @@ import { SearchBar } from './SearchBar';
 import { APIRequests } from './APIRequests';
 import JobsTable from './JobsTable';
 import './App.css';
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+import BootstrapTable from 'react-bootstrap-table-next';
+import paginationFactory from 'react-bootstrap-table2-paginator';
+
+
+const columns = [
+  {
+    prop: 'title',
+    name: "title",
+    sort: true
+  },
+  {
+    prop: 'company',
+    name: 'company',
+    sort: true
+  },
+  {
+    prop: 'location',
+    name: 'location',
+    sort: true
+  },
+  {
+    prop: "created_at",
+    name: "gig up since",
+    sort: true
+  },
+  {
+    prop: "type",
+    name: "FT/PT",
+    sort: true
+  }
+];
 
 class App extends React.Component {
   constructor(props) {
@@ -40,6 +72,11 @@ class App extends React.Component {
           <span role = "img" aria-label = "emojis" className = "emojis">
             🔥💻🔥
           </span>
+
+          <h2>
+          Pagination in progress, please excuse the clunky ui in the meantime.
+          </h2>
+
         </div>
         <SearchBar
         onSubmit= { this.onSubmit}
@@ -50,32 +87,12 @@ class App extends React.Component {
         positions = { this.state.jobsArr }
         columns = { columns }
         />
+
+        <BootstrapTable keyField='id' data={ this.state.jobsArr } columns={ columns }pagination={ paginationFactory() }/>
+
       </div>
     );
   }
 }
-
-const columns = [
-  {
-    name: "Title",
-    prop: "title"
-  },
-  {
-    name: "Company",
-    prop: "company"
-  },
-  {
-    name: "Location",
-    prop: "location"
-  },
-  {
-    name: "Gig Up Since",
-    prop: "created_at"
-  },
-  {
-    name: "FT/PT",
-    prop: "type"
-  }
-];
 
 export default App;

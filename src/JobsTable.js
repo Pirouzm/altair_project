@@ -1,6 +1,8 @@
 import React from 'react';
 import './JobsTable.css';
 
+
+
 //TODO: Make sorting in ascending and descending order order and sorting by date work.
 export default class JobsTable extends React.Component {
   constructor(props) {
@@ -39,13 +41,14 @@ export default class JobsTable extends React.Component {
             }
           });
           break;
+        default:
+          this.setState({ sort:
+          {
+            index: newIndex,
+            order: 'descendingOrder'
+          }
+        });
       }
-    } else {
-      this.setState({ sort:
-      {
-        index: newIndex,
-        order: 'descendingOrder'
-      } })
     }
   }
 
