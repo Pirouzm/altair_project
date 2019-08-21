@@ -4,7 +4,6 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import BootstrapTable from 'react-bootstrap-table-next';
 
 
-
 //TODO: Make sorting in ascending and descending order order and sorting by date work.
 export default class JobsTable extends React.Component {
   constructor(props) {

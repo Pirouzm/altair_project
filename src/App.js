@@ -1,38 +1,46 @@
 import React from 'react';
 import { SearchBar } from './SearchBar';
 import { APIRequests } from './APIRequests';
-import JobsTable from './JobsTable';
 import './App.css';
+import './JobsTable.css'
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 
+const headerSortingClasses = (column, sortOrder, isLastSorting, colIndex) => (
+  sortOrder === 'asc' ? 'demo-sorting-asc' : 'demo-sorting-desc'
+);
 
 const columns = [
   {
-    prop: 'title',
-    name: "title",
-    sort: true
+    dataField: 'title',
+    text: "title",
+    sort: true,
+    headerSortingClasses
   },
   {
-    prop: 'company',
-    name: 'company',
-    sort: true
+    dataField: 'company',
+    text: 'company',
+    sort: true,
+    headerSortingClasses
   },
   {
-    prop: 'location',
-    name: 'location',
-    sort: true
+    dataField: 'location',
+    text: 'location',
+    sort: true,
+    headerSortingClasses
   },
   {
-    prop: "created_at",
-    name: "gig up since",
-    sort: true
+    dataField: "created_at",
+    text: "gig up since",
+    sort: true,
+    headerSortingClasses
   },
   {
-    prop: "type",
-    name: "FT/PT",
-    sort: true
+    dataField: "type",
+    text: "FT/PT",
+    sort: true,
+    headerSortingClasses
   }
 ];
 
@@ -78,17 +86,19 @@ class App extends React.Component {
           </h2>
 
         </div>
+
         <SearchBar
         onSubmit= { this.onSubmit}
         onClear = { this.onClear }
         />
 
-        <JobsTable
-        positions = { this.state.jobsArr }
-        columns = { columns }
+        <BootstrapTable
+          keyField = "title"
+          data = { this.state.jobsArr }
+          columns = { columns }
+          pagination = { paginationFactory() }
+          bordered ={ false }
         />
-
-        <BootstrapTable keyField='id' data={ this.state.jobsArr } columns={ columns }pagination={ paginationFactory() }/>
 
       </div>
     );
