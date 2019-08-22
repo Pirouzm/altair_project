@@ -16,30 +16,35 @@ const columns = [
     dataField: 'title',
     text: "title",
     sort: true,
+    classes: 'JobsTable',
     headerSortingClasses
   },
   {
     dataField: 'company',
     text: 'company',
     sort: true,
+    classes: 'JobsTable',
     headerSortingClasses
   },
   {
     dataField: 'location',
     text: 'location',
     sort: true,
+    classes: 'JobsTable',
     headerSortingClasses
   },
   {
     dataField: "created_at",
     text: "gig up since",
     sort: true,
+    classes: 'JobsTable',
     headerSortingClasses
   },
   {
     dataField: "type",
     text: "FT/PT",
     sort: true,
+    classes: 'JobsTable',
     headerSortingClasses
   }
 ];
@@ -93,6 +98,7 @@ class App extends React.Component {
         />
 
         <BootstrapTable
+          className = "JobsTable"
           keyField = "title"
           data = { this.state.jobsArr }
           columns = { columns }

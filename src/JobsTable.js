@@ -45,7 +45,9 @@ export default class JobsTable extends React.Component {
                   columns.map(({ prop }) => {
                     return (
                       <td>
-                        { position[prop] }
+                        {
+                          position[prop]
+                        }
                       </td>
                     );
                   })
