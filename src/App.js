@@ -11,13 +11,21 @@ const headerSortingClasses = (column, sortOrder, isLastSorting, colIndex) => (
   sortOrder === 'asc' ? 'demo-sorting-asc' : 'demo-sorting-desc'
 );
 
+const customTotal = (from, to, size) => (
+  <span className="react-bootstrap-table-pagination-total">
+    Showing { from } to { to } of { size } Results
+  </span>
+);
+
+
+
 const columns = [
   {
     dataField: 'title',
     text: "title",
     sort: true,
     classes: 'JobsTable',
-    headerSortingClasses
+    headerSortingClasses,
   },
   {
     dataField: 'company',
@@ -48,6 +56,15 @@ const columns = [
     headerSortingClasses
   }
 ];
+
+const options = {
+  hidePageListOnlyOnePage: true, // Hide the pagination list when only one page
+  prePageText: 'Back',
+  prePageTitle: 'Pre page',
+  nextPageText: 'Next',
+  nextPageTitle: 'mext page',
+  showTotal: true
+};
 
 class App extends React.Component {
   constructor(props) {
@@ -86,10 +103,6 @@ class App extends React.Component {
             🔥💻🔥
           </span>
 
-          <h2>
-          Pagination in progress, please excuse the clunky ui in the meantime.
-          </h2>
-
         </div>
 
         <SearchBar
@@ -102,10 +115,9 @@ class App extends React.Component {
           keyField = "title"
           data = { this.state.jobsArr }
           columns = { columns }
-          pagination = { paginationFactory() }
+          pagination = { paginationFactory(options) }
           bordered ={ false }
         />
-
       </div>
     );
   }

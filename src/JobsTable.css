@@ -19,7 +19,7 @@
 }
 
 
-.JobsTable, li, .pagination {
+.JobsTable {
   font-size: 0.75em;
   font-family: camcorder_ms_reg-webfont, 'Helvetica',sans-serif;
   background-color: #eeff36;
@@ -34,31 +34,52 @@
   background-color: #eeff36;
 }
 
-table, li {
+table {
   width: 100vw;
   background-color: #eeff36;
   border: 10px solid #eeff36;
-
 }
 
 th {
   border: 10px solid #eeff36;
 }
 
-.pagination, li{
-  background-color: #eeff36;
-  border: 10px solid #eeff36;
-  display: inline;
-}
-
 button {
-  border: 10px solid #eeff36;
+  border: 10px solid #ffd9f7;
   font-size: 0.75em;
-  background-color: #eeff36;
+  background-color: #ffd9f7;
   font-family: camcorder_ms_inv-webfont, 'Helvetica',sans-serif;
 }
 
-div.col-md-6 {
-  background-color: #eeff36;
+.row.react-bootstrap-table-pagination{
+  background-color: #ffd9f7;
+}
 
+.dropdown-item {
+  background-color: #ffd9f7;
+}
+
+li {
+  display: inline;
+  transition: all .5s ease-in-out;
+}
+
+ul, li {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 0.75em;
+  text-shadow: 2px 2px 2px #eeff36;
+
+}
+
+ul.dropdown-menu {
+  background-color: #ffd9f7;
+  padding-bottom: 20px;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
