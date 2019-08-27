@@ -17,8 +17,6 @@ const customTotal = (from, to, size) => (
   </span>
 );
 
-
-
 const columns = [
   {
     dataField: 'title',

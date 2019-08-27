@@ -1,7 +1,10 @@
-## Readme is yet to be written. 
-This is my first React-based project. using the Github Joba API to make a Readme is yet to be written. 
-The impetus is to use the Github Jobs API to serve job openings through a clean, intuitive interface using React. 
+## Readme is yet to be written.
+This is my first React-based project. using the Github Joba API to make a Readme is yet to be written.
+The impetus is to use the Github Jobs API to serve job openings through a clean, intuitive interface using React.
 
+Be sure to run this on chrome, while on a Mac machine.
+You must run this command before npm start:
+### open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
