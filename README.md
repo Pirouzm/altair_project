@@ -1,6 +1,11 @@
-## Readme is yet to be written.
-This is my first React-based project. using the Github Joba API to make a Readme is yet to be written.
+## Readme is yet to be completed.
+This is my first React-based project. using the Github Jobs API to make a Readme is yet to be written.
 The impetus is to use the Github Jobs API to serve job openings through a clean, intuitive interface using React.
+
+You must download React Bootstrap Table2 Paginator to use this app: 
+
+### npm install react-bootstrap-table2-paginator --save
+
 
 Be sure to run this on chrome, while on a Mac machine.
 You must run this command before npm start:
